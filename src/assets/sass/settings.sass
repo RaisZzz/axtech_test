@@ -1,0 +1,56 @@
+@import 'variables'
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+a
+  text-decoration: none
+  color: $link
+
+  &.disabled
+    cursor: initial
+    pointer-events: none
+
+input,
+textarea
+  outline: none
+  background: none
+  border: none
+  font-family: $font
+
+button
+  outline: none
+  background: none
+  border: none
+  cursor: pointer
+
+body
+  font-family: $font
+  background-color: $background
+  color: $on-background
+
+.container
+  width: 100%
+  padding: 20px
+  max-width: 1200px
+  margin: 0 auto
+
+.input
+  width: 100%
+  border-radius: 12px
+  padding: 10px
+  border: 1px solid $surface
+  font-size: 16px
+  background-color: $ui
+  color: $on-ui
+  min-height: 40px
+
+.button
+  background-color: $primary
+  color: $on-primary
+  padding: 5px 15px
+  min-height: 40px
+  border-radius: 5px
+  font-size: 15px
